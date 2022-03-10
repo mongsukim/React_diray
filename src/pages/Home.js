@@ -30,7 +30,13 @@ const Home = () => {
         diaryList.filter((it) => firstDay <= it.date && it.date <= lastDay)
       );
     }
-  }, [diaryList, curDate]);
+  }, [diaryList,curDate]);
+
+  useEffect(()=>{
+    console.log(data);
+  },[data])
+
+
 
   const increaseMonth = () => {
     setCurDate(

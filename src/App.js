@@ -69,10 +69,16 @@ const dummyData = [
     content: '오늘의일기 5번',
     date: 1645947073830,
   },
+  {
+    id: 6,
+    emotion: 5,
+    content: '오늘의일기 5번',
+    date: 1745947073830,
+  },
 ];
 console.log(new Date().getTime());
 function App() {
-  const [data, dispatch] = useReducer(reducer, dummyData);
+  const [data, dispatch] = useReducer(reducer,dummyData);
   const dataId = useRef(0);
   //CREATE
   const onCreate = (date, content, emotion) => {
