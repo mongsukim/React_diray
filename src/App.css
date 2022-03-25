@@ -220,6 +220,26 @@ header button{
   grid-template-columns: repeat(5,auto);
   gap:2%;
 }
+
+.DiaryEditor textarea{
+  font-family:"Nanum Myeongjo";
+  font-size:20px;
+  box-sizing:border-box;
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  border:none;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding:20px;
+}
+
+.DiaryEditor .control_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* EMOTION ITEM */
 .EmotionItem{
   cursor: pointer;
