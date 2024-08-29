@@ -8,6 +8,9 @@ import Edit from './pages/Edit';
 import Diary from './pages/Diary';
 
 const reducer = (state, action) => {
+
+  console.log('state',state)
+
   let newState = [];
   switch (action.type) {
     case 'INIT': {
@@ -22,7 +25,7 @@ const reducer = (state, action) => {
       break;
     }
     case 'EDIT': {
-      newState = state.map((it) =>
+      newState = state?.map((it) =>
         it.id === action.data.id ? { ...action.data } : it
       );
       break;
